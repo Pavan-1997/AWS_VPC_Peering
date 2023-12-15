@@ -7,23 +7,23 @@
 
     Name - `test-vpc`
     
-    IPv4 - 10.0.0.0/16
+    IPv4 - `10.0.0.0/16`
     
     Click on Create VPC
 
 
-3. In the VPC page click on Subnets -> Create subnet -> VPC ID - Select the already created (test-vpc) 
+3. In the VPC page click on Subnets -> Create subnet -> VPC ID - Select the already created `test-vpc`
 
-Subnet name - test-public-subnet
+    Subnet name - `test-public-subnet`
+    
+    Availability Zone - `us-east-2a`
+    
+    IPv4 subnet CIDR block - `10.0.0.0/24`
+    
+    Click on Create subnet
+    
 
-Availability Zone - us-east-2a
-
-IPv4 subnet CIDR block - 10.0.0.0/24
-
-Click on Create subnet
-
-
-4. Now go to EC2 -> Launch instance -> Name - test-instance -> Select Ubuntu , t2 micro and a keypair -> In Network settings click on Edit -> Select the VPC - test-vpc which automatially assigns the Subnet 
+4. Now go to EC2 -> Launch instance -> Name - `test-instance` -> Select Ubuntu , t2 micro and a keypair -> In Network settings click on Edit -> Select the VPC - `test-vpc` which automatially assigns the Subnet 
 
 Auto-assign public IP - Enable 
 
@@ -39,31 +39,31 @@ Click on Launch instance
 
 6. Now go to the VPC dashboard -> Click on Internet gateways -> Click on Create internet gateway
 
-Name tag - test-igw
-
-Click on Create internet gateway
-
-Now click on Actions -> Attach to VPC in the internet gateway page -> Select the already created (test-vpc) -> Click on Attach internet gateway 
-
+    Name tag - `test-igw`
+    
+    Click on Create internet gateway
+    
+    Now click on Actions -> Attach to VPC in the internet gateway page -> Select the already created `test-vpc` -> Click on Attach internet gateway 
+    
 
 7. Now go to Route tables -> Click on Create route table 
 
-Name - test-rt
+    Name - `test-rt`
+    
+    VPC  - `test-vpc`
+    
+    Click on Create route table
 
-VPC  - test-vpc
 
-Click on Create route table
+8.  In the Route table page -> Click on Subnet association section -> Click on Edit subnet associations -> Select the `test-public-subnet` -> Click on Save associations
 
-
-8.  In the Route table page -> Click on Subnet association section -> Click on Edit subnet associations -> Select the test-public-subnet -> Click on Save associations
-
-Now in the same Route table page -> Click on Edit routes -> Add route -> 0.0.0.0/0 and Target - Internet Gateway -> Click on Save changes
+    Now in the same Route table page -> Click on Edit routes -> Add route -> `0.0.0.0/0` and Target - `Internet Gateway` -> Click on Save changes
 
 
 9. Now check the EC2 SSH connection which will establish the connection as the instance is in a Public Subnet   
 
 
-10. Similarily create another VPC called prod-vpc with CIDR as 192.168.0.0/16 with prod-subnet as 192.168.0.0/24 with prod-igw with prod-rt with prod-instance with CIDR 192.168.0.0/16 by following Step 2. to Step 9.
+10. Similarily create another VPC called `prod-vpc` with CIDR as `192.168.0.0/16` with prod-subnet as 192.168.0.0/24 with prod-igw with prod-rt with prod-instance with CIDR 192.168.0.0/16 by following Step 2. to Step 9.
 
 
 11. Try to Ping from test-instance to prod-instance which will not ping
