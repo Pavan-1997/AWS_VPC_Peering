@@ -29,7 +29,7 @@
     
     Enable Create a security group 
     
-    Add an Inbound Security Group Rule Type - HTTP and Source type - Anywhere 
+    Add an Inbound Security Group Rule Type - `HTTP` and Source type - `Anywhere` 
     
     Click on Launch instance
 
