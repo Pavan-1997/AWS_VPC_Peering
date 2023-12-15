@@ -82,7 +82,7 @@
   
     Name - `test-prod-peering`
     
-    VPC ID (Requester) - `test-vpc
+    VPC ID (Requester) - `test-vpc`
     
     VPC ID (Accepter) - `prod-vpc`
     
