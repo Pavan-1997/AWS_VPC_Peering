@@ -93,26 +93,26 @@
 
 13. Go to the VPC dashboard -> Click on Subnets -> Create subnet -> Select the already created (test-vpc)
 
-Subnet name - test-private-subnet
-
-Availability Zone - us-east-2b
-
-IPv4 subnet CIDR block - 10.0.1.0/24
-
-Click on Create subnet
+    Subnet name - `test-private-subnet`
+    
+    Availability Zone - `us-east-2b`
+    
+    IPv4 subnet CIDR block - `10.0.1.0/24`
+    
+    Click on Create Subnet
 
 
 14. Now go to the NAT gateways -> Click on Create NAT gateway  
 
-Name - test-nat
+    Name - `test-nat`
+    
+    Subnet - `test-public-subnet`
+    
+    Click on Allocate Elastic IP 
+    
+    Click on Create NAT gateway
 
-Subnet - test-public-subnet
 
-Click on Allocate Elastic IP 
-
-Click on Create NAT gateway
-
-
-15. Now go to the Route tables -> Click on test-rt -> Click on Edit routes -> Add route -> 10.0.1.0/24 and Target - NAT Gateway -> Click on Save changes
+15. Now go to the Route tables -> Click on `test-rt` -> Click on Edit routes -> Add route -> `10.0.1.0/24` and Target - `NAT Gateway` -> Click on Save changes
 
 
