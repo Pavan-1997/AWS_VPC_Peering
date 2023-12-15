@@ -5,11 +5,11 @@
 
 2. In EC2 -> Open VPC, you will have a default VPC -> Create VPC 
 
-  Name - test-vpc
-  
-  IPv4 - 10.0.0.0/16
-  
-  Click on Create VPC
+    Name - `test-vpc`
+    
+    IPv4 - 10.0.0.0/16
+    
+    Click on Create VPC
 
 
 3. In the VPC page click on Subnets -> Create subnet -> VPC ID - Select the already created (test-vpc) 
