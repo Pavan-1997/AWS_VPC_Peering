@@ -70,24 +70,24 @@
 
 
 12. Now go to the VPC dashboard -> Click on the Peering connections -> Click on Create peering connection 
+  
+    Name - `test-prod-peering`
+    
+    VPC ID (Requester) - `test-vpc
+    
+    VPC ID (Accepter) - `prod-vpc`
+    
+    Click on Create peering connection
+    
+    Click on Actions -> Accept request
 
-Name - test-prod-peering
-
-VPC ID (Requester) - test-vpc
-
-VPC ID (Accepter) - prod-vpc
-
-Click on Create peering connection
-
-Click on Actions -> Accept request
-
-Now go back to the Route tables -> Click on test-rt -> Click on Edit routes -> 192.168.0.0/16 and Target - Peering Connection -> Click on Save changes
-
-Similarly Now go back to the Route tables -> Click on prod-rt -> Click on Edit routes -> 10.0.0.0/16 and Target - Peering Connection -> Click on Save changes
-
-Now go the test-instance -> Click on Security -> Select the Security group -> Click on Edit inbound rules -> Click on Add rule -> All ICMP - IPv4 and Source - Custom - 192.168.0.0/16 -> Click on Save rules 
-
-Now go the prod-instance -> Click on Security -> Select the Security group -> Click on Edit inbound rules -> Click on Add rule -> All ICMP - IPv4 and Source - Custom - 10.0.0.0/16 -> Click on Save rules 
+    Now go back to the Route tables -> Click on `test-rt` -> Click on Edit routes -> `192.168.0.0/16` and Target - `Peering Connection` -> Click on Save changes
+    
+    Similarly, Now go back to the Route tables -> Click on `prod-rt` -> Click on Edit routes -> `10.0.0.0/16` and Target - `Peering Connection` -> Click on Save changes
+    
+    Now go the test-instance -> Click on Security -> Select the Security group -> Click on Edit inbound rules -> Click on Add rule -> `All ICMP - IPv4` and Source - Custom - `192.168.0.0/16` -> Click on Save rules 
+    
+    Now go the prod-instance -> Click on Security -> Select the Security group -> Click on Edit inbound rules -> Click on Add rule -> `All ICMP - IPv4` and Source - Custom - `10.0.0.0/16` -> Click on Save rules 
 
 -----
 
