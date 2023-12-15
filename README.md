@@ -23,7 +23,7 @@
     Click on Create subnet
     
 
-4. Now go to EC2 -> Launch instance -> Name - `test-instance` -> Select Ubuntu , t2 micro and a keypair -> In Network settings click on Edit -> Select the VPC - `test-vpc` which automatially assigns the Subnet 
+4. Now go to EC2 -> Launch instance -> Name - `test-instance` -> Select Ubuntu , t2 micro and a keypair -> In Network settings click on Edit -> Select the VPC - `test-vpc` which automatically assigns the Subnet 
 
 Auto-assign public IP - Enable 
 
