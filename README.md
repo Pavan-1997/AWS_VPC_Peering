@@ -98,6 +98,10 @@
     
     Now go the prod-instance -> Click on Security -> Select the Security group -> Click on Edit inbound rules -> Click on Add rule -> `All ICMP - IPv4` and Source - Custom - `10.0.0.0/16` -> Click on Save rules 
 
+![image](https://github.com/Pavan-1997/AWS_VPC_Peering/assets/32020205/a73aed06-e759-41f0-9b9c-8eb3d3768e43)
+
+![image](https://github.com/Pavan-1997/AWS_VPC_Peering/assets/32020205/c81ef6df-a7cf-4108-93a1-ff06de7f6ddd)
+
 -----
 
 13. Go to the VPC dashboard -> Click on Subnets -> Create subnet -> Select the already created (test-vpc)
