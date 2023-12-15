@@ -64,6 +64,8 @@
 
 9. Now check the EC2 SSH connection which will establish the connection as the instance is in a Public Subnet   
 
+![image](https://github.com/Pavan-1997/AWS_VPC_Peering/assets/32020205/da825adf-1f7c-49f2-8b68-509f7c234739)
+
 
 10. Similarly create another VPC called `prod-vpc` with CIDR as `192.168.0.0/16` with prod-subnet as `192.168.0.0/24` with `prod-igw` with `prod-rt` with `prod-instance` with CIDR `192.168.0.0/16` by following Step 2. to Step 9.
 
