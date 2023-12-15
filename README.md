@@ -25,13 +25,13 @@
 
 4. Now go to EC2 -> Launch instance -> Name - `test-instance` -> Select Ubuntu , t2 micro and a keypair -> In Network settings click on Edit -> Select the VPC - `test-vpc` which automatically assigns the Subnet 
 
-Auto-assign public IP - Enable 
-
-Enable Create security group 
-
-Add an Inbound Security Group Rule Type - HTTP and Source type - Anywhere 
-
-Click on Launch instance
+    Auto-assign public IP - Enable 
+    
+    Enable Create a security group 
+    
+    Add an Inbound Security Group Rule Type - HTTP and Source type - Anywhere 
+    
+    Click on Launch instance
 
 
 5. Now check the EC2 SSH connection which will not establish the connection as the instance is in a Private Subnet  
@@ -63,7 +63,7 @@ Click on Launch instance
 9. Now check the EC2 SSH connection which will establish the connection as the instance is in a Public Subnet   
 
 
-10. Similarily create another VPC called `prod-vpc` with CIDR as `192.168.0.0/16` with prod-subnet as 192.168.0.0/24 with prod-igw with prod-rt with prod-instance with CIDR 192.168.0.0/16 by following Step 2. to Step 9.
+10. Similarly create another VPC called `prod-vpc` with CIDR as `192.168.0.0/16` with prod-subnet as `192.168.0.0/24` with `prod-igw` with `prod-rt` with `prod-instance` with CIDR `192.168.0.0/16` by following Step 2. to Step 9.
 
 
 11. Try to Ping from test-instance to prod-instance which will not ping
