@@ -36,11 +36,7 @@
 
 5. Now check the EC2 SSH connection which will not establish the connection as the instance is in a Private Subnet  
 
-![image](https://github.com/Pavan-1997/AWS_VPC_Peering/assets/32020205/a7ff1d02-1fd7-4b2f-8ae7-567a20b04aaf)
-
-
-![image](https://github.com/Pavan-1997/AWS_VPC_Peering/assets/32020205/d6ae35d4-1812-4ec6-bca1-63cb933eb94d)
-
+![image](https://github.com/Pavan-1997/AWS_VPC_Peering/assets/32020205/1ee9f6be-17a3-4cc3-8051-fd7403d957d7)
 
 
 6. Now go to the VPC dashboard -> Click on Internet gateways -> Click on Create internet gateway
@@ -73,6 +69,11 @@
 
 
 11. Try to Ping from test-instance to prod-instance which will not ping
+
+![image](https://github.com/Pavan-1997/AWS_VPC_Peering/assets/32020205/a7ff1d02-1fd7-4b2f-8ae7-567a20b04aaf)
+
+
+![image](https://github.com/Pavan-1997/AWS_VPC_Peering/assets/32020205/d6ae35d4-1812-4ec6-bca1-63cb933eb94d)
 
 
 12. Now go to the VPC dashboard -> Click on the Peering connections -> Click on Create peering connection 
