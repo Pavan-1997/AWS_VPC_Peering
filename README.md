@@ -2,7 +2,7 @@
   
 1. Go to the AWS Console -> Select Region - Ohio 
   
-
+ 
 2. In EC2 -> Open VPC, you will have a default VPC -> Create VPC 
 
     Name - `test-vpc`
